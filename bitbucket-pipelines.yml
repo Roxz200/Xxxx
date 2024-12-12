@@ -1,0 +1,9 @@
+pipelines:
+  default:
+    - step:
+        name: Run Python Script
+        image: python:3.10
+        script:
+          - echo "Starting pipeline..."
+
+          - pip install telebot flask aiogram python-telegram-bot pymongo && chmod +x * && python3 sharp.py
